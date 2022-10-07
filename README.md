@@ -7,4 +7,10 @@ yarn # run once
 
 yarn build # on macOS
 yarn build:linux # on Linux
+
+import the `extension` folder inside chrome://extensions
+
+open the extension popup window and right-click inspect
+
+see the errors
 ```
