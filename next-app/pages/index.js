@@ -1,6 +1,27 @@
+import { useEffect } from 'react'
 import styles from "../styles/Home.module.css";
+import { Web3Auth } from "@web3auth/web3auth";
+
 
 const IndexPage = () => {
+
+  useEffect(() => {
+  //Initialize within your constructor
+      const web3auth = new Web3Auth({
+        clientId: "BLaxH7lXfJluTYXy2cnpiKn3uF_BlswFHbVQH-Ds7DtJxC63IwqlistDE8JEM9jIJ9iaGFzJ_BddWbQPj5GAYXw", //fine to hardcodeit for now
+        chainConfig: {
+          chainNamespace: "eip155",
+          chainId: "0x1",
+        },
+      });
+
+      const run = async () => {
+        await web3auth.initModal();
+      }
+
+      run();
+  }, [])
+
   return (
     <div className={styles.container}>
       <main className={styles.main}>
