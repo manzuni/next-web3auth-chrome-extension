@@ -1,0 +1,10 @@
+{
+  "name": "Zuni Test",
+  "description": "Next.js Chrome Extension starter",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Zuni Test",
+    "default_popup": "index.html"
+  }
+}
